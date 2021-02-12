@@ -214,7 +214,7 @@ func ClientVpnNetworkAssociationDisassociated(conn *ec2.EC2, networkAssociationI
 }
 
 const (
-	ClientVpnRouteDeletedTimeout = 1 * time.Minute
+	ClientVpnRouteDeletedTimeout = 10 * time.Minute
 )
 
 func ClientVpnRouteDeleted(conn *ec2.EC2, routeID string) (*ec2.ClientVpnRoute, error) {
